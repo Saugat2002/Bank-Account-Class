@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+        
+  <link rel="stylesheet" href="./assets/index-32cded66.css">
+</head>
+
+<body class="bg-cyan-100 h-full w-screen flex justify-center items-center">
+    <div class="container bg-cyan-300 w-4/6 h-full my-5 p-7 flex flex-col space-y-7">
+        <div class="inputName space-x-5 flex items-center">
+            <div class="mb-4">  
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  Deposit Amount
+                </label>
+                <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="depositAmt" type="number" placeholder="Enter amount...">
+            </div>
+            <button class="btn mt-4" id="deposit">Deposit</button>
+        </div>
+        <div class="inputName space-x-5 flex items-center">
+            <div class="mb-4">  
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  Withdraw Amount
+                </label>
+                <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="withdrawAmt" type="number" placeholder="Enter amount...">
+            </div>
+            <button class="btn mt-4" id="withdraw">Withdraw</button>
+        </div>
+        <div id="error" class="text-sm absolute top-52 text-red-600 italic"></div>
+        <div class="curr space-x-3">
+            <span class="text-lg" id="currentBalanceBtn">Current Balance</span>
+            <span>=></span>
+            <span id="currentBalance" class="font-bold text-lg">0 Dollars</span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
